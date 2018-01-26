@@ -1,18 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.macwojs.obsypka.MainActivity">
+    tools:context="com.example.macwojs.obsypka.MainActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >
+
+
+    <Spinner
+        style="@style/material_spinner"
+        android:id="@+id/planets_spinner"
+        android:entries="@array/material_array"/>
 
     <TextView
+        style="@style/tytul_wymiary"
+        android:text="@string/sr_otw"/>
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+        <EditText
+            style="@style/wprowadzanie_wymiary"
+            android:hint="@string/sr_otw"/>
+        <Spinner
+            style="@style/wybieranie_jednostki"
+            android:entries="@array/jed_array"/>
+    </LinearLayout>
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        style="@style/tytul_wymiary"
+        android:text="@string/sr_filtru"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+        <EditText
+            style="@style/wprowadzanie_wymiary"
+            android:hint="@string/sr_filtru"/>
+        <Spinner
+            style="@style/wybieranie_jednostki"
+            android:entries="@array/jed_array"/>
+    </LinearLayout>
+
+    <TextView
+        style="@style/tytul_wymiary"
+        android:text="@string/d_obs"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+        <EditText
+            style="@style/wprowadzanie_wymiary"
+            android:hint="@string/d_obs"/>
+        <Spinner
+            style="@style/wybieranie_jednostki"
+            android:entries="@array/jed_array"/>
+    </LinearLayout>
+</LinearLayout>

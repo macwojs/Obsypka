@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">Obsypka</string>
+
+    <string name="material_prompt">Wybierz materiał</string>
+
+    <string-array name="material_array">
+        <item>@string/obs_waga</item>
+        <item>@string/com_waga</item>
+    </string-array>
+
+    <string-array name="jed_array">
+        <item>mm</item>
+        <item>cm</item>
+        <item>m</item>
+    </string-array>
+
+    <string name="sr_otw">Średnica otworu</string>
+    <string name="sr_filtru">Średnica filtru</string>
+    <string name="d_obs">Długość obsypki</string>
+    <string name="obs_waga">Obsybka 1,98t/m3</string>
+    <string name="com_waga">Compactonic 1 t/m3</string>
+    <string name="Oblicz">Oblicz</string>
+
 </resources>
