@@ -12,8 +12,8 @@
 
 
     <Spinner
+        android:id="@+id/wyb_mat"
         style="@style/material_spinner"
-        android:id="@+id/planets_spinner"
         android:entries="@array/material_array"/>
 
     <TextView
@@ -25,25 +25,29 @@
         android:orientation="horizontal"
         android:layout_marginBottom="8dp">
         <EditText
+            android:id="@+id/sr_otw"
             style="@style/wprowadzanie_wymiary"
             android:hint="@string/sr_otw"/>
         <Spinner
+            android:id="@+id/wyb_jed_otw"
             style="@style/wybieranie_jednostki"
             android:entries="@array/jed_array"/>
     </LinearLayout>
 
     <TextView
         style="@style/tytul_wymiary"
-        android:text="@string/sr_filtru"/>
+        android:text="@string/sr_fil"/>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginBottom="8dp">
         <EditText
+            android:id="@+id/sr_fil"
             style="@style/wprowadzanie_wymiary"
-            android:hint="@string/sr_filtru"/>
+            android:hint="@string/sr_fil"/>
         <Spinner
+            android:id="@+id/wyb_jed_fil"
             style="@style/wybieranie_jednostki"
             android:entries="@array/jed_array"/>
     </LinearLayout>
@@ -57,10 +61,22 @@
         android:orientation="horizontal"
         android:layout_marginBottom="8dp">
         <EditText
+            android:id="@+id/d_obs"
             style="@style/wprowadzanie_wymiary"
             android:hint="@string/d_obs"/>
         <Spinner
+            android:id="@+id/wyb_jed_obs"
             style="@style/wybieranie_jednostki"
             android:entries="@array/jed_array"/>
     </LinearLayout>
+
+    <Button
+        style="@style/guzik_oblicz"
+        android:text="@string/Oblicz"
+        android:onClick="oblicz"/>
+
+    <TextView
+        android:id="@+id/proba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </LinearLayout>

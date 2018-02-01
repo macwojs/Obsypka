@@ -9,7 +9,7 @@
     </style>
 
     <style name="material_spinner">
-        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_margin">16dp</item>
         <item name="android:layout_marginBottom">16dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
@@ -24,7 +24,7 @@
     <style name="wprowadzanie_wymiary">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
-        <item name="android:inputType">number</item>
+        <item name="android:inputType">numberDecimal</item>
     </style>
 
     <style name="wybieranie_jednostki">
@@ -33,5 +33,12 @@
         <item name="android:gravity">center_vertical</item>
     </style>
 
-
+    <style name="guzik_oblicz">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:layout_marginRight">64dp</item>
+        <item name="android:layout_marginTop">26dp</item>
+    </style>
 </resources>

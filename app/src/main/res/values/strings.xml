@@ -11,11 +11,12 @@
     <string-array name="jed_array">
         <item>mm</item>
         <item>cm</item>
+        <item>dm</item>
         <item>m</item>
     </string-array>
 
     <string name="sr_otw">Średnica otworu</string>
-    <string name="sr_filtru">Średnica filtru</string>
+    <string name="sr_fil">Średnica filtru</string>
     <string name="d_obs">Długość obsypki</string>
     <string name="obs_waga">Obsybka 1,98t/m3</string>
     <string name="com_waga">Compactonic 1 t/m3</string>
