@@ -20,6 +20,7 @@
     <string name="d_obs">Długość obsypki</string>
     <string name="obs_waga">Obsybka 1,98t/m3</string>
     <string name="com_waga">Compactonic 1 t/m3</string>
-    <string name="Oblicz">Oblicz</string>
+    <string name="oblicz">Oblicz</string>
+    <string name="wiadomosc">Nie dodałeś wszystkich potrzebnych informacji</string>
 
 </resources>
