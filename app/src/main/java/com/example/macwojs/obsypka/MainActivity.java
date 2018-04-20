@@ -1,5 +1,6 @@
 package com.example.macwojs.obsypka;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -186,6 +187,19 @@ public class MainActivity extends AppCompatActivity {
         double m[] = masa(obj1MB);
         double masa1MB = m[0];
         double masaX = m[1];
+
+        double param[] = new double[4];
+        param[0]=obj1MB;
+        param[1]=masa1MB;
+        param[2]=objX;
+        param[3]=masaX;
+
+
+        Intent wyniki = new Intent(MainActivity.this, Wyniki.class);
+        Bundle b = new Bundle();
+        b.putDoubleArray("parametry", param);
+        wyniki.putExtras(b);
+        startActivity(wyniki);
 
         String a = obj1MB + "\n" +
                 masa1MB + "\n" +

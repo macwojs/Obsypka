@@ -22,5 +22,18 @@
     <string name="com_waga">Compactonic 1 t/m3</string>
     <string name="oblicz">Oblicz</string>
     <string name="wiadomosc">Nie dodałeś wszystkich potrzebnych informacji</string>
+    <string name="wyniki">Wyniki</string>
+
+    <!--
+        Napisy dla aktywnosci: Wyniki
+    -->
+    <string name="masa">Masa:</string>
+    <string name="obj">Objętość:</string>
+    <string name="masa1mb">Masa 1MB:</string>
+    <string name="obj1mb">Objętość 1MB:</string>
+
+    <string name="jed_masa">kg</string>
+    <string name="jed_obj">kg/m3</string>
+    <string name="jed_obj1mb">kg</string>
 
 </resources>
