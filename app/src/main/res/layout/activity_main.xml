@@ -14,6 +14,10 @@
         android:gravity="center_horizontal"
         >
 
+        <TextView
+            android:layout_marginTop="16dp"
+            style="@style/tytul_wymiary"
+            android:text="@string/material"/>
 
         <Spinner
             android:id="@+id/wyb_mat"
@@ -24,10 +28,7 @@
             style="@style/tytul_wymiary"
             android:text="@string/sr_otw"/>
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginBottom="8dp">
+            style="@style/linear_layout_wprowadzanie">
             <EditText
                 android:id="@+id/sr_otw"
                 style="@style/wprowadzanie_wymiary"
@@ -42,10 +43,7 @@
             style="@style/tytul_wymiary"
             android:text="@string/sr_fil"/>
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginBottom="8dp">
+            style="@style/linear_layout_wprowadzanie">
             <EditText
                 android:id="@+id/sr_fil"
                 style="@style/wprowadzanie_wymiary"
@@ -60,10 +58,7 @@
             style="@style/tytul_wymiary"
             android:text="@string/d_obs"/>
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginBottom="8dp">
+            style="@style/linear_layout_wprowadzanie">
             <EditText
                 android:id="@+id/d_obs"
                 style="@style/wprowadzanie_wymiary"
@@ -71,17 +66,12 @@
             <Spinner
                 android:id="@+id/wyb_jed_obs"
                 style="@style/wybieranie_jednostki"
-                android:entries="@array/jed_array"/>
+                android:entries="@array/jed_array_dl" />
         </LinearLayout>
 
         <Button
             style="@style/guzik_oblicz"
             android:text="@string/oblicz"
             android:onClick="oblicz"/>
-
-        <TextView
-            android:id="@+id/proba"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
     </LinearLayout>
 </ScrollView>

@@ -1,8 +1,10 @@
 package com.example.macwojs.obsypka;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Spinner;
@@ -128,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
         String mat = spinnerMaterial.getSelectedItem().toString();
 
         switch (mat) {
-            case "Obsybka 1,98t/m3":
+            case "Obsybka 1,98 t/m3":
                 m[0] = obj * 1.98;
                 break;
             case "Compactonic 1 t/m3":
@@ -194,21 +196,10 @@ public class MainActivity extends AppCompatActivity {
         param[2]=objX;
         param[3]=masaX;
 
-
         Intent wyniki = new Intent(MainActivity.this, Wyniki.class);
         Bundle b = new Bundle();
         b.putDoubleArray("parametry", param);
         wyniki.putExtras(b);
         startActivity(wyniki);
-
-        String a = obj1MB + "\n" +
-                masa1MB + "\n" +
-                objX + "\n" +
-                masaX + "\n" +
-                powFil + "\n" +
-                powOtw + "\n";
-
-        TextView text = findViewById(R.id.proba);
-        text.setText(String.valueOf(a));
     }
 }

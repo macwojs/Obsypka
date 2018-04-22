@@ -15,10 +15,18 @@
         <item>m</item>
     </string-array>
 
+    <string-array name="jed_array_dl">
+        <item>m</item>
+        <item>cm</item>
+        <item>dm</item>
+        <item>mm</item>
+    </string-array>
+
+    <string name="material">Materiał</string>
     <string name="sr_otw">Średnica otworu</string>
     <string name="sr_fil">Średnica filtru</string>
     <string name="d_obs">Długość obsypki</string>
-    <string name="obs_waga">Obsybka 1,98t/m3</string>
+    <string name="obs_waga">Obsybka 1,98 t/m3</string>
     <string name="com_waga">Compactonic 1 t/m3</string>
     <string name="oblicz">Oblicz</string>
     <string name="wiadomosc">Nie dodałeś wszystkich potrzebnych informacji</string>
@@ -29,11 +37,10 @@
     -->
     <string name="masa">Masa:</string>
     <string name="obj">Objętość:</string>
-    <string name="masa1mb">Masa 1MB:</string>
-    <string name="obj1mb">Objętość 1MB:</string>
+    <string name="masa1mb">Masa 1mb:</string>
+    <string name="obj1mb">Objętość 1mb:</string>
 
     <string name="jed_masa">kg</string>
-    <string name="jed_obj">kg/m3</string>
-    <string name="jed_obj1mb">kg</string>
+    <string name="jed_obj">litry</string>
 
 </resources>
